@@ -47,11 +47,11 @@ function draw() {
         scene3();
     } else if (t < 104.5) {
         scene4();
-    } else if (t < 104.6) {
+    } else if (t < 110.5) {
         scene5();
-    } else if (t < 110) {
+    } else if (t < 129) {
         scene6();
-    } else if (t < 120) {
+    } else if (t < 200) {
         scene7();
     }
 
