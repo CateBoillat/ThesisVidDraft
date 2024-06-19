@@ -143,8 +143,8 @@ async function loadAudio() {
     console.log("audio is ready");
 }
 
-const mainContainer = document.getElementById('main-container');
-mainContainer.addEventListener('click', async () => {
+// const mainContainer = document.getElementById('main-container');
+vid.addEventListener('click', async () => {
     if (!audioPlayer) {
         await loadAudio();
     }
@@ -286,5 +286,30 @@ onboardingBtn.addEventListener('click', () => {
 
 onboardingClose.addEventListener('click', () => {
     onboarding.classList.toggle('hidden');
+});
+
+////////////////////////////
+// Bubbles
+
+const BubbleImages = [
+    'TextBub1.png',
+    'TextBub2.png',
+    'TextBub3.png',
+    'TextBub4.png',
+    'TextBub5.png',
+    'TextBub6.png',
+];
+
+const bubblesContainer = document.getElementById('bubbles-container');
+
+bubblesContainer.addEventListener('click', (e) => {
+    // add bubble images randomly in random x position
+    const bubble = document.createElement('img');
+    bubble.addEventListener('animationend', (event) => {
+        event.target.remove();
+    });
+    bubble.src = `assets/${BubbleImages[Math.floor(Math.random() * BubbleImages.length)]}`;
+    bubble.style.left = `${Math.random() * 1080}px`;
+    bubblesContainer.appendChild(bubble);
 });
 
