@@ -137,17 +137,18 @@ body {
     cursor: pointer;
     user-select: none;
 }
+
 #onboarding-btn:hover {
     color: #555;
     border-color: #888;
 }
 
 #onboarding {
-    width: 60vw;
-    height: 60vh;
-    position: fixed;
-    left: 20vw;
-    top: 20vh;
+    width: 40vw;
+    height: 30vh;
+    position: absolute;
+    left: calc(50% - 20vw);
+    top: calc(50% - 35vh);
     padding: 20px;
 
     color: #555;
