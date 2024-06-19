@@ -49,6 +49,10 @@ function draw() {
         scene4();
     } else if (t < 104.6) {
         scene5();
+    } else if (t < 110) {
+        scene6();
+    } else if (t < 120) {
+        scene7();
     }
 
     // * "COMMUNICATE" cursor changes to type cursor;
@@ -105,9 +109,6 @@ function scene4() {
     // circle(width / 2, height / 2, 200);
 
     harmonyBtn.style.display = "block";
-
-    // TODO:
-    bubblesContainer.style.display = "block";
 }
 
 function scene5() {
@@ -115,6 +116,20 @@ function scene5() {
     // circle(width / 2, height / 2, 200);
 
     harmonyBtn.style.display = "none";
+}
+
+function scene6() {
+    // fill(0, 255, 255);
+    // circle(width / 2, height / 2, 200);
+    // TODO:
+    bubblesContainer.style.display = "block";
+}
+
+function scene7() {
+    // fill(0, 255, 255);
+    // circle(width / 2, height / 2, 200);
+    // TODO:
+    bubblesContainer.style.display = "none";
 }
 
 function playHarmonies() {
