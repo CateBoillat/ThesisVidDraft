@@ -21,8 +21,9 @@ let t = 0;
 
 let stem1;
 
+let canvas;
 function setup() {
-    let canvas = createCanvas(1080, 720);
+    canvas = createCanvas(1080, 720);
     canvas.parent("canvas-container");
 }
 
@@ -148,8 +149,8 @@ async function loadAudio() {
     console.log("audio is ready");
 }
 
-// const mainContainer = document.getElementById('main-container');
-vid.addEventListener('click', async () => {
+const mainContainer = document.getElementById('main-container');
+mainContainer.addEventListener('click', async () => {
     if (!audioPlayer) {
         await loadAudio();
     }
@@ -306,6 +307,7 @@ const BubbleImages = [
 ];
 
 bubblesContainer.addEventListener('click', (e) => {
+    e.stopPropagation();
     // add bubble images randomly in random x position
     const bubble = document.createElement('img');
     bubble.addEventListener('animationend', (event) => {
