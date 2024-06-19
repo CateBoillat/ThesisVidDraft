@@ -36,7 +36,7 @@ function draw() {
     }
     else if (t < 43.1) {
         scene0();
-    } else if (t < 48.9) {
+    } else if (t < 48.81) {
         scene1();
     } else if (t < 81.8) {
         scene2();
@@ -48,7 +48,8 @@ function draw() {
         scene5();
     }
 
-    // * "COMMUNICATE" whack-a-mole visuals
+    // * "COMMUNICATE" cursor changes to type cursor;
+    // text bubbles pop up in random positions t < 110
 
     // audio seq
     if (t > 30 && t < 35) {
@@ -61,7 +62,7 @@ function draw() {
 
     noStroke();
     fill(0);
-    text(t, 100, 100);
+    text(t, 1000, 700);
 }
 
 
