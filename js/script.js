@@ -217,7 +217,7 @@ let obj_cards = document.getElementById('object-cards');
 let obj_flowers = document.getElementById('object-flowers');
 
 // video audio player
-function draggable(dragObj, effect) {
+function draggable(dragObj, effect, filter) {
 
     let offsetX, offsetY;
 
@@ -231,7 +231,7 @@ function draggable(dragObj, effect) {
 
         audioPlayer.connect(effect);
 
-        vid.style.filter = 'blur(5px)';
+        vid.style.filter = filter;
     });
 
     function onMouseMove(e) {
@@ -251,8 +251,8 @@ function draggable(dragObj, effect) {
     }
 }
 
-draggable(obj_cards, reverb);
-draggable(obj_flowers, distortion);
+draggable(obj_cards, reverb, 'blur(5px)');
+draggable(obj_flowers, distortion, 'saturate(5)');
 
 // * VISUAL CUES that mimic the effects being applied
 
