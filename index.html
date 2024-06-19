@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is it lost on you?</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+    <!-- tone.js should be imported here -->
+    <script src="http://unpkg.com/tone"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"></script> -->
+
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+
+    <div id="main-container">
+        <div id="video-container">
+            <video muted id="bg-vid" width="1080" height="720">
+                <source src="assets/DraftLV.mp4" type="video/mp4">
+                <!-- <source src="assets/video.mov" type="video/mp4"> -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div id="canvas-container">
+            <!-- p5 canvas will be appended here. -->
+        </div>
+    </div>
+
+    <!-- add your objects -->
+    <div class="objects" id="object-cards">
+        <img src="assets/DeckCards.png" alt="deck of cards">
+    </div>
+
+    <div class="objects" id="object-flowers">
+        <img src="assets/Valentines.png" alt="someone holding flowers">
+    </div>
+
+    <div id="harmony">
+        <img src="./assets/Candle.png" />
+    </div>
+
+</body>
+
+</html>
