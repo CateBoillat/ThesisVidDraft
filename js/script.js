@@ -271,3 +271,19 @@ function triggerHarmony() {
 
     console.log(hIndex, harmony);
 }
+
+///////////////////////////
+// onboarding
+
+let onboarding = document.getElementById('onboarding');
+let onboardingBtn = document.getElementById('onboarding-btn');
+let onboardingClose = document.getElementById('onboarding-close');
+
+onboardingBtn.addEventListener('click', () => {
+    onboarding.classList.toggle('hidden');
+});
+
+onboardingClose.addEventListener('click', () => {
+    onboarding.classList.toggle('hidden');
+});
+
