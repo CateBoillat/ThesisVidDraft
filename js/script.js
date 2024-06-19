@@ -13,6 +13,8 @@ const HarmonyAudios = Harmonies.map(h => {
 
 const harmonyBtn = document.getElementById('harmony');
 
+const bubblesContainer = document.getElementById('bubbles-container');
+
 let vid = document.getElementById("bg-vid");
 
 let t = 0;
@@ -102,6 +104,9 @@ function scene4() {
     // circle(width / 2, height / 2, 200);
 
     harmonyBtn.style.display = "block";
+
+    // TODO:
+    bubblesContainer.style.display = "block";
 }
 
 function scene5() {
@@ -299,8 +304,6 @@ const BubbleImages = [
     'TextBub5.png',
     'TextBub6.png',
 ];
-
-const bubblesContainer = document.getElementById('bubbles-container');
 
 bubblesContainer.addEventListener('click', (e) => {
     // add bubble images randomly in random x position

@@ -40,6 +40,8 @@ body {
     position: absolute;
     top: 0;
     cursor: text;
+
+    display: none;
 }
 
 #bubbles-container img {
